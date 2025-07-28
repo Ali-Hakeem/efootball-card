@@ -138,12 +138,12 @@
   .ribbonText4Hijau {
       position: absolute;
       top: 315px;            /* sesuaikan agar teks ada di dalam ribbon */
-      left: 80px;           /* geser ke kanan sedikit sesuai desain */
+      left: 87px;           /* geser ke kanan sedikit sesuai desain */
       transform-origin: left top;
       transform: rotate(0deg);
       color: rgb(244, 240, 5);
       font-weight: bold;
-      font-size: 18px;
+      font-size: 15px;
       pointer-events: none;
       user-select: none;
       z-index: 20;
