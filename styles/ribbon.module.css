@@ -1,0 +1,308 @@
+.container {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.inputRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+  
+  .image {
+    width: 240px;
+    height: 340px;
+    object-fit: cover; /* zoom dan potong agar penuh */
+    border-radius: 8px;
+    display: block;
+  }
+  
+  .image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 340px;
+    object-fit: cover;
+    z-index: 3;
+    pointer-events: none;
+  }
+  
+  
+  .image3 {
+    position: absolute;
+    top: 83px;            /* sesuaikan agar teks ada di dalam ribbon */
+    left: 16px;           /* geser ke kanan sedikit sesuai desain */
+    transform-origin: left top;
+    width: 100%; /* atau sesuaikan */
+    max-width: 53px;
+    height: auto;
+    z-index: 10;
+    pointer-events: none;
+  }
+  .ribbonImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 240px;  /* sesuaikan ukuran ribbon */
+    height: 340px;
+    z-index: 10;
+    pointer-events: none;
+  }
+  
+  .ribbonText {
+    position: absolute;
+    top: 290px;            /* sesuaikan agar teks ada di dalam ribbon */
+    left: 20px;           /* geser ke kanan sedikit sesuai desain */
+    transform-origin: left top;
+    transform: rotate(-10deg);
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 20;
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px; /* spasi antar huruf */
+    word-spacing: 2px;
+  }
+  
+  .ribbonTextHijau {
+    position: absolute;
+    top: 260px;            /* sesuaikan agar teks ada di dalam ribbon */
+    left: 15px;           /* geser ke kanan sedikit sesuai desain */
+    transform-origin: left top;
+    transform: rotate(-10deg);
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 20;
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px; /* spasi antar huruf */
+    word-spacing: 2px;
+  }
+
+  .ribbonText2 {
+    position: absolute;
+    top: 10px;            /* sesuaikan agar teks ada di dalam ribbon */
+    left: 15px;           /* geser ke kanan sedikit sesuai desain */
+    transform-origin: left top;
+    transform: rotate(0deg);
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 20;
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+
+  .ribbonText3 {
+    position: absolute;
+    top: 52px;            /* sesuaikan agar teks ada di dalam ribbon */
+    left: 16px;           /* geser ke kanan sedikit sesuai desain */
+    transform-origin: left top;
+    transform: rotate(0deg);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 20;
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+
+  .ribbonText4Hijau {
+      position: absolute;
+      top: 315px;            /* sesuaikan agar teks ada di dalam ribbon */
+      left: 80px;           /* geser ke kanan sedikit sesuai desain */
+      transform-origin: left top;
+      transform: rotate(0deg);
+      color: rgb(244, 240, 5);
+      font-weight: bold;
+      font-size: 18px;
+      pointer-events: none;
+      user-select: none;
+      z-index: 20;
+      white-space: nowrap;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+
+  .ribbonText5Hijau {
+    position: absolute;
+    top: 320px; /* sedikit lebih bawah dari ribbonText4 */
+    left: 80px;
+    font-size: 18px;
+    color: rgba(101, 95, 95, 0.926); /* abu-abu atau transparan untuk bayangan bintang */
+    text-shadow:
+    -0.5px -1px 0 #000,
+    0.5px -1px 0 #000,
+    -0.5px  1px 0 #000,
+    0.5px  1px 0 #000;
+    font-weight: bold;
+    z-index: 3; /* di bawah ribbonText4 */
+    pointer-events: none;
+  }
+    .ribbonText4 {
+        position: absolute;
+        top: 308px;            /* sesuaikan agar teks ada di dalam ribbon */
+        left: 80px;           /* geser ke kanan sedikit sesuai desain */
+        transform-origin: left top;
+        transform: rotate(0deg);
+        color: rgb(244, 240, 5);
+        font-weight: bold;
+        font-size: 18px;
+        pointer-events: none;
+        user-select: none;
+        z-index: 20;
+        white-space: nowrap;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+
+  .ribbonText5 {
+    position: absolute;
+    top: 308px; /* sedikit lebih bawah dari ribbonText4 */
+    left: 80px;
+    font-size: 18px;
+    color: rgba(101, 95, 95, 0.926); /* abu-abu atau transparan untuk bayangan bintang */
+    text-shadow:
+    -0.5px -1px 0 #000,
+    0.5px -1px 0 #000,
+    -0.5px  1px 0 #000,
+    0.5px  1px 0 #000;
+    font-weight: bold;
+    z-index: 3; /* di bawah ribbonText4 */
+    pointer-events: none;
+  }
+
+  .ribbonTextEmas {
+    position: absolute;
+    top: 260px;            /* sesuaikan agar teks ada di dalam ribbon */
+    left: 20px;           /* geser ke kanan sedikit sesuai desain */
+    transform-origin: left top;
+    transform: rotate(-10deg);
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 20;
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px; /* spasi antar huruf */
+    word-spacing: 2px;
+  }
+
+  .ribbonTextEpic {
+    position: absolute;
+    top: 250px; /* tetap bisa kamu sesuaikan secara vertikal */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 20;
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+  }
+  
+
+  .ribbonText4Epic {
+    position: absolute;
+    top: 318px;            /* sesuaikan agar teks ada di dalam ribbon */
+    left: 93px;           /* geser ke kanan sedikit sesuai desain */
+    transform-origin: left top;
+    transform: rotate(0deg);
+    color: rgb(244, 240, 5);
+    font-weight: bold;
+    font-size: 13.5px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 20;
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.ribbonText5Epic {
+    position: absolute;
+    top: 318px;            /* sesuaikan agar teks ada di dalam ribbon */
+    left: 93px;           /* geser ke kanan sedikit sesuai desain */
+    transform-origin: left top;
+    transform: rotate(0deg);
+    color: rgb(244, 240, 5);
+    font-weight: bold;
+    font-size: 13.5px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 20;
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.image2Epic {
+    position: absolute;
+    top: 86px;
+    left: 30px;
+    transform-origin: left top;
+    width: auto;
+    height: 240px;
+    object-fit: cover; /* akan crop gambar sesuai ukuran di atas */
+    z-index: 3;
+  }
+  
+
+.imageEpic {
+    position: absolute;
+    top: 0;
+    left: -170px;
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.ribbonText2Epic {
+    position: absolute;
+    top: 10px;            /* sesuaikan agar teks ada di dalam ribbon */
+    left: 15px;           /* geser ke kanan sedikit sesuai desain */
+    transform-origin: left top;
+    transform: rotate(0deg);
+    color: rgb(217, 214, 7);
+    font-weight: bold;
+    font-size: 40px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 20;
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  
